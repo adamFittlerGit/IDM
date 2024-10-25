@@ -85,6 +85,7 @@ We need to first check whether the models provided the correct risk scenario cla
 
 ### Justifications:
 We also need to evaluate the natural lanaguage jsutification the model provides for its answer, in this we are not explicitely always looking for a exact word match but more semantic similarity between the provided answer and the gold label ground truth 
+
 ---
 
 ## Conclusion
