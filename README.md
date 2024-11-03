@@ -16,6 +16,10 @@ For my pipeline, I need a structure to **evaluate the performance of the risk cl
 
 ---
 
+## Current Architecture Plans
+![diagram](https://github.com/user-attachments/assets/d0c9e460-166b-4e6b-bca2-bc8be5c138b4)
+
+
 ## Ruleset for Risk Classification
 The following rules will guide the classification process based on the proximity of objects within the image:
 
