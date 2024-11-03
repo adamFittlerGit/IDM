@@ -33,6 +33,22 @@ The following rules will guide the classification process based on the proximity
 This ruleset provides a simple yet effective way to **annotate images** and guide the model's classification decisions. Additionally, since we know the **pixel-to-meter ratio**, we can accurately calculate distances within the images.  Even without the pixel to metre ratio we can still use the labelled images in order to provide
 enough training data such that the damage can be mitigated. 
 
+### Risk Categories Extended
+#### New Ideas
+After talking to Peter he seemed to think that the parkinsonia spread as far as they are tall.  Using a provieded research paper he outlined a relationship between the parkinsonias dry weight, its height and its diameter and if I rearrange these equations I may be able to get an equation that can tell me its height given its diameter.  
+
+Then using this in combination with the systems current capabilities we can use this calculated height and calculate the maximum spreading distance for each of the parkinsonia within the image. 
+
+This means we could do a system where we get the low, med, high, critical based on the percentage distance of the planets height.  For example no risk is distances greater than 100% of its height, low within 100% to 75%, medium within 75% to 50%, high within 50% to 25% and critical from 25% to 0%. Furthermore, another idea is to models the risk as a 3D normal distribution for the chance of spreading.  
+
+#### Calculating the diameter to height ratio
+Using the provided formulas of
+W = 0.091D^3.04 
+W = 0.025H^4.47
+
+We can get that H = ((0.091D)^3.04/0.025)^(1/4.47) allowing us to calculate the height of the parkinsonia given its diameter. 
+
+The only Issue is that this is the canopy diameter but I think is this case it will be fine to do it this way 
 ---
 
 ## Model Architecture
