@@ -117,6 +117,8 @@ Ultimately, this research will help me build a portfolio showcasing my ability t
 - Define a clear evaluation metric for risk classifications and justifications.
 - Compare the performance of different model architectures.
 - Explore sentiment analysis as part of the justification validation.
+- Proposal for the system process One Weed - All Weeds - Extending to creating tables etc
+- Final challenge apply to whole orthomosiac - there would be an amazing paper to write here
 
 ---
 
