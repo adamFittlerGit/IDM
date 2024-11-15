@@ -53,6 +53,7 @@ W = 0.025H^4.47
 We can get that H = ((0.091D)^3.04/0.025)^(1/4.47) allowing us to calculate the height of the parkinsonia given its diameter. 
 
 The only Issue is that this is the canopy diameter but I think is this case it will be fine to do it this way 
+
 ---
 
 ## Model Architecture
