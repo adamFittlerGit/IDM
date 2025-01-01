@@ -52,7 +52,9 @@ W = 0.025H^4.47
 
 We can get that H = ((0.091D)^3.04/0.025)^(1/4.47) allowing us to calculate the height of the parkinsonia given its diameter. 
 
-The only Issue is that this is the canopy diameter but I think is this case it will be fine to do it this way 
+The only Issue is that this is the canopy diameter but I think is this case it will be fine to do it this way.  We will make it such that the maximum risk radius from a 5 * the height of the tree.  This will be easy to quantify using the known drone pixel to metre ratio or getting info about the drone image metadata in order to calculate these distances using projections. 
+
+This will then need to be used in order to make an accurately labelled dataset for the vlm model finetuning like for lava as well as finetuning the openai vlm models in order to see how each of these compare in there results for risk identification in images.  
 
 ---
 
@@ -62,7 +64,6 @@ The architecture I plan to use combines several techniques to provide robust and
 
 1. **YOLOv11**: This model will detect the various objects within the image, such as weeds, plants, water bodies, or cattle tracks, and calculate the distance between them.
 2. **Vision-Language Encoding**: A VLM will encode the image into vector space, allowing the model to understand spatial and contextual relationships between the objects.
-3. **RAG (Retrieval-Augmented Generation)**: In our case, the RAG model may not need a retrieval step due to the small document set. However, it can still help produce more accurate descriptions by leveraging additional context.
 
 The combination of these approaches should produce more accurate and **explainable results** compared to traditional methods. This architecture also ensures flexibility in scaling up for larger datasets or more complex environments.
 

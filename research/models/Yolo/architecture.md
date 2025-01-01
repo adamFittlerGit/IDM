@@ -9,10 +9,6 @@ Yolo Object Segmentation
 4. Compute Risk Distribution assuming risk probability is gaussian
 5. Identify Risk Level for each risk type using std from the mean or center
 
-## Stage Three: RAG LLM Generation (Support Conclusions with relevant documents and regulations) -- might not be fully necessary, initially we will start just with pure CV as this approach is all thats needed to solve the problem no need to over engineer
-Pass gathered data to the LLM applying RAG to pass the relevant documents to the LLM to provide the most accurate justifications of its choices 
-
-
 ## Potential Extension 
 Can we extend this to more than one image can we leverage distributed computing to perform this on the whole orthomosiac of somehow leverage yolov11 object tracking through the drone images in order to achieve this?
 
